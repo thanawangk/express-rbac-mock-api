@@ -1,0 +1,120 @@
+{
+  "users": [
+    {
+      "user_id": 1,
+      "sub": "001123",
+      "name": "Admin",
+      "email": "admin@example.com",
+      "roles_assignment": [
+        {
+          "bu_id": 1,
+          "bu_name": "BU1",
+          "roles": ["Admin"],
+          "permission": ["USER_MANAGEMENT"]
+        },
+        {
+          "bu_id": 2,
+          "bu_name": "BU2",
+          "roles": ["Admin"],
+          "permission": ["USER_MANAGEMENT"]
+        },
+        {
+          "bu_id": 3,
+          "bu_name": "BU3",
+          "roles": ["Admin"],
+          "permission": ["USER_MANAGEMENT"]
+        }
+      ]
+    },
+    {
+      "user_id": 2,
+      "sub": "002123",
+      "name": "User",
+      "email": "user@example.com",
+      "roles_assignment": [
+        {
+          "bu_id": 2,
+          "bu_name": "BU2",
+          "roles": ["User"],
+          "permission": ["VIEW_DASHBOARD"]
+        }
+      ]
+    },
+    {
+      "user_id": 3,
+      "sub": "003123",
+      "name": "Guest",
+      "email": "guest@example.com",
+      "roles_assignment": [
+        {
+          "bu_id": 3,
+          "bu_name": "BU3",
+          "roles": ["Guest"],
+          "permission": ["VIEW_PUBLIC_CONTENT"]
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "bu_id": 1,
+      "bu_name": "BU1",
+      "roles": [
+        {
+          "role_name": "Admin",
+          "permission": ["USER_MANAGEMENT"]
+        },
+        {
+          "role_name": "User",
+          "permission": ["VIEW_DASHBOARD"]
+        },
+        {
+          "role_name": "Guest",
+          "permission": ["VIEW_PUBLIC_CONTENT"]
+        }
+      ]
+    },
+    {
+      "bu_id": 2,
+      "bu_name": "BU2",
+      "roles": [
+        {
+          "role_name": "Admin",
+          "permission": ["USER_MANAGEMENT"]
+        },
+        {
+          "role_name": "User",
+          "permission": ["VIEW_DASHBOARD"]
+        }
+      ]
+    },
+    {
+      "bu_id": 3,
+      "bu_name": "BU3",
+      "roles": [
+        {
+          "role_name": "Admin",
+          "permission": ["USER_MANAGEMENT"]
+        },
+        {
+          "role_name": "Guest",
+          "permission": ["VIEW_PUBLIC_CONTENT"]
+        }
+      ]
+    }
+  ],
+  "organizations": [
+    {
+      "bu_id": 1,
+      "bu_name": "BU1"
+    },
+    {
+      "bu_id": 2,
+      "bu_name": "BU2"
+    },
+    {
+      "bu_id": 3,
+      "bu_name": "BU3"
+    }
+  ]
+}
